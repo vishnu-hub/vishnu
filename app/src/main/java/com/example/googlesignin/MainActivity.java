@@ -107,10 +107,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             GoogleSignInAccount account = result.getSignInAccount();
             String name = account.getDisplayName();
             String email = account.getEmail();
-            //String img_url = account.getPhotoUrl().toString();
             Name.setText(name);
             Email.setText(email);
-            //Glide.with(this).load(img_url).into(Prof_Pic);
             updateUI(true);
 
 
